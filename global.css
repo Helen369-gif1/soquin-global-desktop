@@ -104,3 +104,17 @@ button, .button {
     justify-content: center;
   }
 }
+/* Зазор между заголовком и карточками = 50px */
+.intro-section { 
+  gap: 50px;
+}
+
+/* На десктопе не поднимаем среднюю карточку (или поднимаем меньше) */
+@media (min-width: 993px) {
+  .intro-section .card-featured {
+    transform: translateY(0);    /* вариант 1: ровно 50px зазор */
+    /* transform: translateY(-10px);  вариант 2: лёгкий «подъём», итоговый зазор будет 40px */
+    /* transform: translateY(-20px);  вариант 3: итоговый зазор будет 30px */
+  }
+}
+
