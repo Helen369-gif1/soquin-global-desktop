@@ -92,4 +92,15 @@ button, .button {
         font-size: 18px !important;
         line-height: 1.5 !important;
     }
+} 
+/* === FIX: keep the 3 intro cards on one row on desktop === */
+.intro-section { 
+  max-width: 1280px; /* чтобы 3 карточки + gap поместились в одну линию */
+}
+
+@media (min-width: 993px) {
+  .intro-section .cards-container { 
+    flex-wrap: nowrap; /* не переносим на новую строку */
+    justify-content: center;
+  }
 }
