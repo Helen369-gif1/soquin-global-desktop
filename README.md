@@ -1,0 +1,1 @@
+Desktop-only static site built from your frame. Inter via Google Fonts. Place images in assets/img/ (already mapped). Upload to GitHub Pages/Netlify to publish.
