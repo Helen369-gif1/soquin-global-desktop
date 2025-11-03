@@ -1,194 +1,736 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SoQuin Global</title>
-  <meta name="description" content="SoQuin Global — Redefining Commerce, Currency, and Communication!" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoQuin Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 24px 0;
+}
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header-logo .logo-svg-wrapper {
+    position: relative;
+    width: 103px;
+    height: 36px;
+}
+.main-nav ul {
+    display: flex;
+    gap: 46px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-nav a {
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.header-actions .login-link {
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-actions .btn-primary {
+    padding: 10px 20px;
+    height: 39px;
+    width: 89px;
+    box-sizing: border-box;
+}
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
-  <meta property="og:title" content="SoQuin Global" />
-  <meta property="og:description" content="Redefining Commerce, Currency, and Communication!" />
-  <meta property="og:image" content="assets/img/earth.jpg" />
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 0 40px;
+    }
+    .main-nav ul {
+        gap: 20px;
+    }
+}
 
-  <link rel="icon" href="assets/icons/logo.png" />
+@media (max-width: 992px) {
+    .main-nav, .header-actions {
+        display: none;
+    }
+    .mobile-nav-toggle {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: var(--color-text-dark);
+        position: relative;
+    }
+    .hamburger::before, .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: var(--color-text-dark);
+        left: 0;
+    }
+    .hamburger::before {
+        top: -8px;
+    }
+    .hamburger::after {
+        bottom: -8px;
+    }
+}
 
-  <!-- Inter (Aeonik substitute) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+/* CSS for section section:Hero */
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 877px;
+    background-image: url('images/9b573bd894bf74ec12d65c24de93b213e1120c68.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+.hero-content {
+    max-width: 967px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+}
+.hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 1.15;
+    margin: 0;
+    max-width: 967px;
+}
+.hero-content p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 583px;
+}
+.hero-content .btn-primary {
+    width: 127px;
+    height: 39px;
+    box-sizing: border-box;
+}
+@media (max-width: 992px) {
+    .hero-section {
+        padding: 0 40px;
+        height: 70vh;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-content {
+        align-items: center;
+    }
+}
 
-  <link rel="stylesheet" href="styles.css" />
+/* CSS for section section:Intro */
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--color-white);
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.intro-text h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+.intro-text p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-light);
+    margin: 0;
+    max-width: 781px;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+}
+.card-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-title {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-primary);
+    width: 100%;
+}
+.card-featured {
+    transform: translateY(-44px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+.slider-nav {
+    margin-top: 15px;
+}
+@media (max-width: 992px) {
+    .cards-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .card-featured {
+        transform: translateY(0);
+    }
+}
+
+/* CSS for section section:DigitalBanker */
+.digital-banker-section {
+    background: radial-gradient(173.07% 205.27% at 50% 50%, rgba(0, 2, 29, 0) 0%, rgba(2, 7, 77, 0.63) 100%), url('images/0a7d367db352f63370bea383ff59f39808be8646.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+}
+.digital-banker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.digital-banker-content h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0;
+}
+.digital-banker-content p {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 676px;
+}
+.digital-banker-logo {
+    width: 138px;
+    height: 138px;
+    margin-top: 30px;
+}
+.digital-banker-buttons {
+    display: flex;
+    gap: 26px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CSS for section section:GlobalVideo */
+.global-video-section {
+    background-color: var(--color-primary);
+}
+.video-wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.video-placeholder {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video-thumbnail {
+    width: 100%;
+    display: block;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 138px;
+    height: 138px;
+    transition: transform 0.3s ease;
+}
+.video-placeholder:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* CSS for section section:GlobalReserve */
+.global-reserve-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.reserve-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.reserve-text-content h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+.reserve-text-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.reserve-image-content {
+    flex-shrink: 0;
+    width: 427px;
+    height: 377px;
+}
+.reserve-image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='427' height='377' viewBox='0 0 427 377' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M172 0H427C319.423 0 231.222 84.335 231.222 188.5C231.222 292.665 319.423 377 427 377H172C64.4233 377 -23.7778 292.665 -23.7778 188.5C-23.7778 84.335 64.4233 0 172 0Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='427' height='377' viewBox='0 0 427 377' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M172 0H427C319.423 0 231.222 84.335 231.222 188.5C231.222 292.665 319.423 377 427 377H172C64.4233 377 -23.7778 292.665 -23.7778 188.5C-23.7778 84.335 64.4233 0 172 0Z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+@media (max-width: 992px) {
+    .global-reserve-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .reserve-image-content {
+        width: 100%;
+        max-width: 427px;
+        height: auto;
+    }
+}
+
+/* CSS for section section:SoquinProperties */
+.soquin-properties-section {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+}
+.properties-image-content {
+    flex-shrink: 0;
+    width: 427px;
+    height: 377px;
+}
+.properties-image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='427' height='377' viewBox='0 0 427 377' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M255 0H0C107.577 0 195.778 84.335 195.778 188.5C195.778 292.665 107.577 377 0 377H255C362.577 377 450.778 292.665 450.778 188.5C450.778 84.335 362.577 0 255 0Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg width='427' height='377' viewBox='0 0 427 377' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M255 0H0C107.577 0 195.778 84.335 195.778 188.5C195.778 292.665 107.577 377 0 377H255C362.577 377 450.778 292.665 450.778 188.5C450.778 84.335 362.577 0 255 0Z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.properties-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+.properties-text-content h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.properties-text-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.properties-buttons {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+    .soquin-properties-section {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .properties-image-content {
+        width: 100%;
+        max-width: 427px;
+        height: auto;
+    }
+}
+
+/* CSS for section section:SoquinConnections */
+.soquin-connections-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.connections-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.connections-text h2 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.connections-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+    margin: 0;
+    max-width: 814px;
+}
+.soquin-connections-section .video-placeholder {
+    max-width: 600px;
+    width: 100%;
+}
+.connections-buttons {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CSS for section section:Footer */
+.site-footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 80px 20px;
+}
+.footer-container {
+    max-width: 1003px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-newsletter {
+    gap: 18px;
+    flex: 1;
+    min-width: 280px;
+}
+.footer-logo .logo-svg-wrapper {
+    position: relative;
+    width: 103px;
+    height: 36px;
+}
+.footer-newsletter p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.newsletter-form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.newsletter-form input {
+    background-color: transparent;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: var(--color-white);
+    font-size: 16px;
+}
+.newsletter-form .btn-secondary {
+    align-self: flex-start;
+}
+.footer-links {
+    gap: 22px;
+}
+.footer-links h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer-links a {
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-download {
+    align-items: flex-start;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-download {
+        align-items: center;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
 </head>
 <body>
-  <header class="header">
-    <div class="wrap">
-      <a class="brand" href="#top">
-        <img src="assets/icons/logo.png" alt="SoQuin Global" />
-        <span>SoQuin Global</span>
-      </a>
-      <nav class="nav">
-        <a href="#solos">Solos</a>
-        <a href="#digital-banker">Digital Banker</a>
-        <a href="#s-pro">S-Pro</a>
-        <a href="#soquin">SoQuin</a>
-        <a href="#about-us">About us</a>
-        <a href="#login" class="nav-link">Login</a>
-        <a href="#signup" class="btn btn--pill">Sign up</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero" style="--hero:url('assets/img/hero.jpg');">
-      <div class="wrap hero__inner">
-        <div class="hero__text">
-          <h1>Embrace evolution for your money</h1>
-          <p class="lead">For those who want more from their money — there's Wix. Sign up for free, in a tap.</p>
-          <div class="hero__cta">
-            <a class="btn" href="#get-the-app">Get the app</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Solutions 3-cards -->
-    <section class="solutions" id="solutions">
-      <div class="wrap">
-        <h2 class="center">SoQuin Global</h2>
-        <p class="center sub">Redefining Commerce, Currency, and Communication!</p>
-
-        <div class="cards3">
-          <article class="card">
-            <img src="assets/img/earth.jpg" alt="Manage your money">
-            <h3>MANAGE YOUR MONEY</h3>
-          </article>
-          <article class="card card--raised">
-            <img src="assets/img/home.jpg" alt="Own a home">
-            <h3>OWN A HOME</h3>
-          </article>
-          <article class="card">
-            <img src="assets/img/connect.jpg" alt="Connections">
-            <h3>CONNECTIONS</h3>
-          </article>
-        </div>
-
-        <div class="dots" aria-hidden="true">
-          <span class="dot"></span><span class="dot active"></span><span class="dot"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Digital Banker band -->
-    <section class="band" id="digital-banker" style="--bg:url('assets/img/banker-bg.jpg')">
-      <div class="wrap band__inner">
-        <div class="band__content">
-          <h2>Digital Banker</h2>
-          <p>Your AI-powered private wealth manager that keeps you on track, pays bills with a tap, and maximizes your money inside.</p>
-          <div class="actions">
-            <a class="btn btn--ghost" href="#how-it-works">See How it Works</a>
-            <a class="btn btn--pill" href="#try-digital-banker">Try Digital Banker</a>
-          </div>
-        </div>
-        <div class="seal">
-          <img src="assets/img/earth.jpg" alt="Badge">
-        </div>
-      </div>
-    </section>
-
-    <!-- Video preview block -->
-    <section class="video-block">
-      <div class="wrap">
-        <div class="video">
-          <img src="assets/img/earth.jpg" alt="Video preview">
-          <button class="play" aria-label="Play video">▶</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Global Reserve -->
-    <section class="feature feature--right" id="global-reserve">
-      <div class="wrap feature__grid">
-        <div class="feature__text">
-          <h3>Global Reserve</h3>
-          <ul class="bullets">
-            <li>Manages assets, currencies, and stability.</li>
-            <li>Ensures legal adherence and transparency.</li>
-            <li>Long-term strategies for financial sustainability.</li>
-            <li>Rigorous processes for integrity and stakeholder insights.</li>
-          </ul>
-          <a class="btn btn--ghost" href="#get-the-app">Get the app</a>
-        </div>
-        <div class="feature__media feature__media--badge">
-          <img src="assets/img/reserve.jpg" alt="Global Reserve">
-        </div>
-      </div>
-    </section>
-
-    <!-- SoQuin Properties -->
-    <section class="feature feature--left" id="soquin-properties">
-      <div class="wrap feature__grid">
-        <div class="feature__media feature__media--circle">
-          <img src="assets/img/home.jpg" alt="SoQuin Properties">
-        </div>
-        <div class="feature__text">
-          <h3>SoQuin Properties</h3>
-          <p>Stable Solos currency linked to real estate. Constant, like the “Forever Stamp”. Ensures stability in property transactions. Resists inflation, countering currency drawbacks.</p>
-          <div class="actions">
-            <a class="btn btn--ghost" href="#get-the-app">Get the app</a>
-            <a class="btn btn--light" href="#see-how">See How it Works</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SoQuin Connections -->
-    <section class="feature feature--connections" id="soquin-connections">
-      <div class="wrap">
-        <h3>SoQuin Connections</h3>
-        <p class="muted">Seamless integration of messaging and social media. Prioritizes robust security with end-to-end encryption. Fosters creativity, offering analytics and monetization opportunities.</p>
-        <div class="video">
-          <img src="assets/img/waterfall.jpg" alt="Connections video">
-          <button class="play" aria-label="Play video">▶</button>
-        </div>
-        <div class="actions center">
-          <a class="btn btn--ghost" href="#get-the-app">Get the app</a>
-          <a class="btn btn--light" href="#see-how">See How it Works</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer__grid">
-      <div class="col brandcol">
-        <a class="brand small" href="#top">
-          <img src="assets/icons/logo.png" alt="SoQuin Global" />
-          <span>SoQuin Global</span>
+<header class="site-header">
+    <div class="header-container">
+        <a href="#" class="header-logo">
+            <!--merged image-->
+            <div class="logo-svg-wrapper">
+                <img src="images/2005_3576.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                <img src="images/2005_3628.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 29px;">
+                <img src="images/2005_3676.svg" alt="logo part" style="position: absolute; left: 5px; top: 21px; width: 31px; height: 15px;">
+                <img src="images/2005_3723.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                <img src="images/2005_3771.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 27px; height: 36px;">
+                <img src="images/2005_3819.svg" alt="logo part" style="position: absolute; left: 14px; top: 0px; width: 22px; height: 34px;">
+                <img src="images/2005_3825.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 34px; height: 34px;">
+                <img src="images/2005_3873.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                <img src="images/2005_3929.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 29px;">
+                <img src="images/2005_3981.svg" alt="logo part" style="position: absolute; left: 4px; top: 20px; width: 32px; height: 16px;">
+                <img src="images/2005_4014.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 35px; height: 36px;">
+                <img src="images/2005_4066.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 26px; height: 36px;">
+                <img src="images/2005_4117.svg" alt="logo part" style="position: absolute; left: 23px; top: 27px; width: 11px; height: 8px;">
+                <img src="images/2005_4138.svg" alt="logo part" style="position: absolute; left: 0px; top: 1px; width: 31px; height: 33px;">
+                <img src="images/2005_4185.svg" alt="logo part" style="position: absolute; left: 42px; top: 7px; width: 39px; height: 9px;">
+                <img src="images/2005_4191.svg" alt="logo part" style="position: absolute; left: 42px; top: 20px; width: 47px; height: 9px;">
+            </div>
         </a>
-        <form class="newsletter" onsubmit="event.preventDefault(); alert('Subscribed!');">
-          <label for="email">Sign up to receive our newsletter</label>
-          <div class="row">
-            <input id="email" name="email" type="email" placeholder="Email" required>
-            <button class="btn btn--light" type="submit">Subscribe for Updates</button>
-          </div>
-        </form>
-      </div>
-      <div class="col">
-        <h4>Solutions</h4>
-        <ul class="links">
-          <li><a href="#solos">Solos</a></li>
-          <li><a href="#digital-banker">DigitalBanker</a></li>
-          <li><a href="#s-pro">S-Pro</a></li>
-          <li><a href="#soquin">SoQuin</a></li>
-        </ul>
-      </div>
-      <div class="col">
-        <a class="btn btn--pill full" href="#download">download the application</a>
-      </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#intro">SoGlo</a></li>
+                <li><a href="#digital-banker">Digital Banker</a></li>
+                <li><a href="#soquin-properties">SoPro</a></li>
+                <li><a href="#soquin-connections">SoQuln</a></li>
+                <li><a href="#">SoQuin</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="login-link">Log in</a>
+            <a href="#" class="button btn-primary">Sign up</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
     </div>
-  </footer>
-
-  <script src="script.js"></script>
+</header>
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <h1>Embrace evolution for your money</h1>
+        <p>For those who want more from their money — there’s Wix. Sign up for free, in a tap.</p>
+        <a href="#" class="button btn-primary">Get the app</a>
+    </div>
+</section>
+<section id="intro" class="section-container intro-section">
+    <div class="intro-text">
+        <h2>SoQuin Global</h2>
+        <p>Redefining Commerce, Currency, and Communication!</p>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="images/93a261929c7806bc3d6479d81781d9b9e65f57ee.png" alt="Manage your money" class="card-img">
+            <p class="card-title">Manage your money</p>
+        </div>
+        <div class="card card-featured">
+            <img src="images/1deb6ca0fc2b5e1957522212015ed0e25d3773fb.png" alt="Own a home" class="card-img">
+            <p class="card-title">Own a home</p>
+        </div>
+        <div class="card">
+            <img src="images/c015e009d3b4f6dd8fb0ff2891e0ba675c59faca.png" alt="Connections" class="card-img">
+            <p class="card-title">Connections</p>
+        </div>
+    </div>
+    <div class="slider-nav">
+        <img src="images/71_909.svg" alt="Slider navigation dots">
+    </div>
+</section>
+<section id="digital-banker" class="digital-banker-section">
+    <div class="section-container digital-banker-content">
+        <h2>Digital Banker</h2>
+        <p>Your AI-powered private wealth manager that keeps you on track, pays bills with a tap, and maximizes your money inside.</p>
+        <img src="images/ea56e7977facd63896e8f15ea23620300b24b343.png" alt="Global Dollars Logo" class="digital-banker-logo">
+        <div class="digital-banker-buttons">
+            <a href="#" class="button btn-secondary">See How It Works</a>
+            <a href="#" class="button btn-secondary">Try Digital Banker</a>
+        </div>
+    </div>
+</section>
+<section id="global-video" class="global-video-section">
+    <div class="section-container video-wrapper">
+        <a href="#" class="video-placeholder">
+            <img src="images/1212dce44dacebde6273351a7eb374813578fc5a.png" alt="Global video thumbnail" class="video-thumbnail">
+            <img src="images/2007_12551.svg" alt="Play button" class="play-button">
+        </a>
+    </div>
+</section>
+<section id="global-reserve" class="section-container global-reserve-section">
+    <div class="reserve-text-content">
+        <h2>Global Reserve</h2>
+        <p>Manages assets, currencies, and stability. Ensures legal adherence and transparency. Long-term strategies for financial sustainability. Rigorous processes for integrity and stakeholder insights.</p>
+        <a href="#" class="button btn-primary">Get the app</a>
+    </div>
+    <div class="reserve-image-content">
+        <img src="images/67ce405c48cd05df464417bf03a219298be9ace3.png" alt="Business meeting">
+    </div>
+</section>
+<section id="soquin-properties" class="section-container soquin-properties-section">
+    <div class="properties-image-content">
+        <img src="images/33f70c056ce73d81facf46ad9538fbe05ca5ed8a.png" alt="Modern house with pool">
+    </div>
+    <div class="properties-text-content">
+        <h2>SoQuin Properties</h2>
+        <p>Stable Solos currency linked to real estate. Constant, like the "Forever Stamp." Ensures stability in property transactions. Resists inflation, countering currency drawbacks.</p>
+        <div class="properties-buttons">
+            <a href="#" class="button btn-primary">Get the app</a>
+            <a href="#" class="button btn-secondary">See How It Works</a>
+        </div>
+    </div>
+</section>
+<section id="soquin-connections" class="section-container soquin-connections-section">
+    <div class="connections-text">
+        <h2>SoQuin Connections</h2>
+        <p>Seamless integration of messaging and social media. Prioritizes robust security with end-to-end encryption. Fosters creativity, offering analytics and monetization opportunities</p>
+    </div>
+    <a href="#" class="video-placeholder">
+        <img src="images/d939e6b116a2fb8712ff2b7e9c9de6eea1c20812.png" alt="Waterfall video thumbnail" class="video-thumbnail">
+        <img src="images/70_676.svg" alt="Play button" class="play-button">
+    </a>
+    <div class="connections-buttons">
+        <a href="#" class="button btn-primary">Get the app</a>
+        <a href="#" class="button btn-secondary">See How It Works</a>
+    </div>
+</section>
+<footer id="footer" class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column footer-newsletter">
+            <a href="#" class="footer-logo">
+                <!--merged image-->
+                <div class="logo-svg-wrapper">
+                    <img src="images/2005_5456.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                    <img src="images/2005_5508.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 29px;">
+                    <img src="images/2005_5556.svg" alt="logo part" style="position: absolute; left: 5px; top: 21px; width: 31px; height: 15px;">
+                    <img src="images/2005_5603.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                    <img src="images/2005_5651.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 27px; height: 36px;">
+                    <img src="images/2005_5699.svg" alt="logo part" style="position: absolute; left: 14px; top: 0px; width: 22px; height: 34px;">
+                    <img src="images/2005_5705.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 34px; height: 34px;">
+                    <img src="images/2005_5753.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 36px;">
+                    <img src="images/2005_5809.svg" alt="logo part" style="position: absolute; left: 0px; top: 0px; width: 36px; height: 29px;">
+                    <img src="images/2005_5861.svg" alt="logo part" style="position: absolute; left: 4px; top: 20px; width: 32px; height: 16px;">
+                    <img src="images/2005_5894.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 35px; height: 36px;">
+                    <img src="images/2005_5946.svg" alt="logo part" style="position: absolute; left: 1px; top: 0px; width: 26px; height: 36px;">
+                    <img src="images/2005_5997.svg" alt="logo part" style="position: absolute; left: 23px; top: 27px; width: 11px; height: 8px;">
+                    <img src="images/2005_6018.svg" alt="logo part" style="position: absolute; left: 0px; top: 1px; width: 31px; height: 33px;">
+                    <img src="images/2005_6065.svg" alt="logo part" style="position: absolute; left: 42px; top: 7px; width: 39px; height: 9px;">
+                    <img src="images/2005_6071.svg" alt="logo part" style="position: absolute; left: 42px; top: 20px; width: 47px; height: 9px;">
+                </div>
+            </a>
+            <p>Sign up to receive our newsletter</p>
+            <form class="newsletter-form">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="button btn-secondary">Subscribe for Updates</button>
+            </form>
+        </div>
+        <div class="footer-column footer-links">
+            <h3>Solutions</h3>
+            <ul>
+                <li><a href="#">SoGlo</a></li>
+                <li><a href="#">Digital Banker</a></li>
+                <li><a href="#">SoPro</a></li>
+                <li><a href="#">SoQuln</a></li>
+                <li><a href="#">SoQuin</a></li>
+            </ul>
+        </div>
+        <div class="footer-column footer-download">
+            <a href="#" class="button btn-secondary">download the application</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

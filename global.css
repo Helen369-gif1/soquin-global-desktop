@@ -1,0 +1,95 @@
+:root {
+  --color-primary: #000653;
+  --color-white: #ffffff;
+  --color-text-dark: #191c1f;
+  --color-text-medium: #3c4349;
+  --color-text-light: #546271;
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-wrapper {
+  max-width: 1441px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-container {
+  padding: 80px 20px;
+  margin: 0 auto;
+  max-width: 1003px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, .button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-main);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  opacity: 0.8;
+}
+
+.btn-secondary:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .section-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 40px 20px;
+    }
+    h1 {
+        font-size: 60px !important;
+        line-height: 1.1 !important;
+    }
+    h2 {
+        font-size: 40px !important;
+        line-height: 1.2 !important;
+    }
+    p {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+}
